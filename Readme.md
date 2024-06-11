@@ -1,0 +1,29 @@
+This a quick handook of git bash commands and useful tips to getting started with github.
+
+
+1. mkdir folder_name  -> creates a directory (using the git bash shell)
+
+2. cd folder/file_name -> takes you to the specified file/folder name
+
+3.pwd -> shows you the directory / folder that you are currently working in ( is short for print working directory) 
+
+4. git clone  HTTPS_link_of_repo -> clones you the repo in your local machine from github using HTTPS
+
+5. git status -> gives u the status of the repo - telling if any changes need to be committed. Always a good  practice to check the status before adding/ removing files from the repository
+
+6. touch file_name - creates a new file
+
+7. git add file_name -> adds a file into the repository. Now the git can track the changes made to the file. Earlier when the file was creaetd using "touch", git didn't hhave access to track the file
+
+8. git restore --stage file_name -> to revert the tracking system, now, altough the file is in the repository, the git cannoyt track the file any longer
+
+9. git commit -m "message" -> use this command once you are done with the staging process(after adding/ removing/updating files). This helps in finalising the code into actual program. Th -m flag is used to type a message 
+
+   NOTE - Using commit,all changes are made only on the local machine. In order to make changes global( in the remote server, which is the server available for other s to access via github), you need to use the Push command(due to git being DVCS)
+
+   * A good practice is to use pwd and git status before starting to make changes to your repository
+  
+10. git checkout - B branch_name -> creates a new beanch and also takes you to the branch, so you can readily start uodating changes
+11. git branch branch_name -> creates a new branch; alsi shows which branch you are currentky working on
+    NOTE - The changes made in the branch is not shown in the main branch. The main branch is completely unaware of these changes
+    Git branches exist i isolation. Changes need to be merged back into the main branch 
