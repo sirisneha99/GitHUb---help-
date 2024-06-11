@@ -25,5 +25,6 @@ This a quick handook of git bash commands and useful tips to getting started wit
   
 10. git checkout - B branch_name -> creates a new beanch and also takes you to the branch, so you can readily start uodating changes
 11. git branch branch_name -> creates a new branch; alsi shows which branch you are currentky working on
-    NOTE - The changes made in the branch is not shown in the main branch. The main branch is completely unaware of these changes
-    Git branches exist i isolation. Changes need to be merged back into the main branch 
+    NOTE - The changes made in the branch is not shown in the main branch. The main branch is completely unaware of these changes. Git branches exist in isolation. Changes need to be merged back into the main branch. We use git push to update the changes made in the remote repository which can be accessed via github
+
+12. git push -u origin branch_name/file/directory_name -> using the -u flag helps in knowing the updates from the upstream - which in this case is the main branch. Now the main branch would be the specified branch name 
